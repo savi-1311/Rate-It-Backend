@@ -58,4 +58,34 @@ router.get('/remove', (req, res) => {
 
 
 
+router.get('/leaderboard', async (req, res) => {
+
+const users = await movieuser.find({});
+
+var obj = {};
+users.forEach((user) => {
+    obj[user.movieID]=0;
+});
+
+users.forEach((user) => {
+    obj[user.movieID]=obj[user.movieID]+1;
+});
+
+var array = [];
+for (var key in obj) {
+  array.push({
+    movieID: key,
+    votes: obj[key]
+  });
+}
+
+var sorted = array.sort(function(a, b) {
+  return (b.votes > a.votes) ? 1 : ((a.votes > b.votes) ? -1 : 0)
+});
+ 
+res.send(array);
+
+});
+
+
 module.exports = router;
