@@ -5,13 +5,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
 
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 
-mongoose.connect('mongodb://savi:sham1311BHAVI@cluster0-shard-00-00.46c53.mongodb.net:27017,cluster0-shard-00-01.46c53.mongodb.net:27017,cluster0-shard-00-02.46c53.mongodb.net:27017/movie?ssl=true&replicaSet=cluster0-shard-0&authSource=admin&retryWrites=true&w=majority',{
+mongoose.connect(process.env.MONGO_URI,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })

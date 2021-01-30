@@ -83,7 +83,7 @@ var sorted = array.sort(function(a, b) {
   return (b.votes > a.votes) ? 1 : ((a.votes > b.votes) ? -1 : 0)
 });
  
-res.send(array);
+res.send(sorted);
 
 });
 
