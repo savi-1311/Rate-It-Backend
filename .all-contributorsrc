@@ -6,6 +6,14 @@
   "commit": false,
   "contributors": [
     {
+      "login": "savi-1311",
+      "name": "Shambhavi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56017960?v=4",
+      "profile": "https://portfolio-shambhavi.netlify.app/",
+      "contributions": [
+        "code"
+        },
+        {
       "login": "tend2infinity",
       "name": "Somya S. Singh",
       "avatar_url": "https://avatars.githubusercontent.com/u/61948033?v=4",
