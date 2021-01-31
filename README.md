@@ -2,11 +2,19 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- Postman -->
+[![Postman API](https://img.shields.io/badge/Postman%20API-Documentation-green)](https://documenter.getpostman.com/view/12944522/TW6zFSVx)
+<!--  -->
+
 Backend files for Rate-It Frontend
 
 The Backend Website for API calls is hosted [Here](https://backend-rate-it.herokuapp.com/)
 
 The Frontend Files can be found at [Rate-It-Project](https://github.com/tend2infinity/Rate-It-Project)
+
+Full-Stack Project is hosted at [Here](https://rate-it-project.netlify.app)
+
+The Postman Documentation can be found [Here](https://documenter.getpostman.com/view/12944522/TW6zFSVx)
 
 ### The following API calls can be made with this project
 
@@ -36,14 +44,9 @@ Returns a boolean value true if the movie is nominated by the passed user or fal
 
 Deletes the tuple which has the passed email and movieID.
 
+<br>
 
-***
-
-#### POST Requests
-
-* > __/browse/add__
-
-Required data : Json Object template = {"movieID": movieID,"userID": userID}
+* > __/browse/add?userID=\<email\>movieID=\<movieID\>__
 
 Pushes the values of movieID and userID into the database.
 
