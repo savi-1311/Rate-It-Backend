@@ -1,9 +1,8 @@
 # Rate-It-Backend 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-<!-- Postman -->
 [![Postman API](https://img.shields.io/badge/Postman%20API-Documentation-green)](https://documenter.getpostman.com/view/12944522/TW6zFSVx)
+[![MIT Liscence](https://img.shields.io/badge/MIT-Liscence-yellow)](https://github.com/savi-1311/Rate-It-Backend/blob/master/LICENSE)
 <!--  -->
 
 Backend files for Rate-It Frontend
