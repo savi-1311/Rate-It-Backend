@@ -33,6 +33,11 @@ router.get('/list', async (req, res) => {
      res.send(data);
 })
 
+
+router.get('/hello', async (req, res) => {
+     res.send("Hello World");
+})
+
 router.get('/find', async (req, res) => {
     var user = req.query.email;
     var movie = req.query.id;
